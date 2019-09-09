@@ -2,25 +2,33 @@ import java.util.Scanner;
 
 public class KeepGuessing {
 
-    public static void main(String[] args) {
+    public static void main(String args[])
+    {
         Scanner keyboard = new Scanner(System.in);
-        int secretNumber, guess = 0;//guess is initialized to 0
 
-        secretNumber = 123;
+        int a = 1 + (int) (Math.random() * 99);
+        int guess;
 
-        System.out.println("I'm thinking of a number between 1 and 1000");
-        System.out.print("Enter the number:");
+        System.out.println("I am thinking of a number from 1 to 100 ... guess what it is ?");
         guess = keyboard.nextInt();
 
-        while ( guess != secretNumber )
-        {
-            System.out.println("\nYou are wrong. Try again.");
-            System.out.println("Enter the number: ");
-            guess = keyboard.nextInt();
-        }
+        while(guess != a){
+            if (guess > a)
+            {
+                System.out.println("lower!");
 
-        System.out.println("You are correct. You win a prize!");
-        keyboard.close();
+            }
+            else if (guess < a)
+            {
+                System.out.println("higher!");
+
+            }
+            else
+            {
+                System.out.println("Congratulations.   You guessed the number with X tries!");
+            }
+        }
     }
+
 
 }
