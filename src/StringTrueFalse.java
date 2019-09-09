@@ -7,30 +7,31 @@ public class StringTrueFalse {
         boolean redEyes = false;
         String response ="y";
 
-        while(!response.equalsIgnoreCase("n")){
+        while(!response.equalsIgnoreCase("n")) {
 
-            System.out.println("Are your eyes red?");
-            response= input.nextLine();
 
-            if (response.equalsIgnoreCase("y")){
-                redEyes=true;
+                System.out.println("Are your eyes red?");
+                response = input.nextLine();
 
-            } else {
-                redEyes=false;
-            }
+                if (response.equalsIgnoreCase("y")) {
+                    redEyes = true;
 
-            if(redEyes==true){
-                System.out.println("get some sleep");
-            } else {
-                System.out.println("you look great.");
-            }
+                } else {
+                    redEyes = false;
+                }
 
-            System.out.println("Do you want to try again?");
-            response= input.nextLine();
-            System.out.println("Response is ["+response+"]");
+                if (redEyes == true) {
+                    System.out.println("get some sleep");
+                } else {
+                    System.out.println("you look great.");
+                }
+
+                System.out.println("Do you want to try again?");
+                response = input.nextLine();
+                System.out.println("Response is [" + response + "]");
+
 
         }
-
 
         System.out.printf("Goodbye!");
     }
