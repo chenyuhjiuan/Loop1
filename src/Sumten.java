@@ -16,5 +16,9 @@ public class Sumten {
             // Loop should end here
         }
         System.out.println("The total of all 10 numbers is " + total);
+
+
+
+
     }
 }
