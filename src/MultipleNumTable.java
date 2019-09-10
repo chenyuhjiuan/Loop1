@@ -1,6 +1,6 @@
 public class MultipleNumTable {
 
-    static final int MAX = 5;
+    static final int MAX = 9;
 
     public static void main(String[] args) {
         int row, column;
