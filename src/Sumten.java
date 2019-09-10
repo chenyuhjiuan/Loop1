@@ -8,17 +8,21 @@ public class Sumten {
         int num, total = 0;
         System.out.printf("Please enter ten integers: ");
         // Loop should start here
-        for(int i=0;i<10; i++) {
-            num = keyboard.nextInt();
-            System.out.printf("Next one please: ");
+        for(int i=0;i<5; i++) {
+            //System.out.printf("Please enter ten integers: ");
 
-            total += num;
+                num = keyboard.nextInt();
+                System.out.printf("Next one please: ");
+
+                total += num;
+            }
+
             // Loop should end here
         }
-        System.out.println("The total of all 10 numbers is " + total);
+        //System.out.println("The total of all 10 numbers is " + total);
 
 
 
 
     }
-}
+
